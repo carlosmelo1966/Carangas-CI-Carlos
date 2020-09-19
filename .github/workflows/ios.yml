@@ -22,7 +22,7 @@ jobs:
           echo Using default scheme: $default
       - name: Cocoapods
         run: |
-        pod install
+          pod install
       - name: Build
         env:
           scheme: ${{ 'default' }}
